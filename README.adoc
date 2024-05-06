@@ -1,2 +1,31 @@
 == Ring Star Problem
 
+=== Possible QA
+
+What is Heuristics?
+
+A heuristic is a "good guess" function used as a building block of a larger algorithm, often in search or optimization problems. It's a problem-dependent technique that exploits specific information about the problem to find a "good enough" solution. Heuristics are usually designed to solve a specific problem or a narrow class of problems.
+
+What is Metaheuristics?
+
+A metaheuristic is a high-level, problem-independent algorithmic framework that provides guidelines or strategies to develop heuristic optimization algorithms. It's a "good guess" system that keeps refining its guesses. Metaheuristics are designed to be applicable to a broad range of problems, treating functions as black boxes. They often implement stochastic optimization, which means the solution found is dependent on the set of random variables generated.
+
+What is GA?
+
+Genetic Algorithm (GA) is a metaheuristic inspired by the process of natural selection. It's a population-based optimization algorithm that uses the principles of evolution to evolve a population of solutions over generations. GA is a global search algorithm that can find optimal or near-optimal solutions to optimization and search problems.
+
+What is SA?
+
+Simulated Annealing (SA) is a metaheuristic inspired by the annealing process in metallurgy. It's a probabilistic optimization algorithm that mimics the physical process of heating and cooling a material to find the minimum energy state. SA is a local search algorithm that can find optimal or near-optimal solutions to combinatorial optimization problems.
+
+Difference between GA and SA?
+
+- Search strategy: SA uses a temperature schedule to control the exploration of the search space, while GA uses a population of solutions and selection, crossover, and mutation operators to search for better solutions.
+- Convergence: SA is known for its ability to converge to a good solution quickly, while GA can take longer to converge, but often finds better solutions.
+- Parameter tuning: SA requires tuning of the temperature schedule, while GA requires tuning of population size, selection pressure, crossover rate, and mutation rate.
+- Computational complexity: SA can be computationally expensive, especially for large problem instances, while GA can be more efficient in terms of computational resources.
+
+=== The heuristics to be compared
+1. Genetic Algorithm
+2. Simulated Annealing
+3. Ant Colony Optimization
