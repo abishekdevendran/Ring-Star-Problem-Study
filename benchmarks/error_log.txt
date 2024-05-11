@@ -1,0 +1,2 @@
+Error in index 8: attempt to get argmin of an empty sequence
+Error in index 10: attempt to get argmin of an empty sequence
