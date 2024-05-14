@@ -25,6 +25,48 @@ Difference between GA and SA?
 - Parameter tuning: SA requires tuning of the temperature schedule, while GA requires tuning of population size, selection pressure, crossover rate, and mutation rate.
 - Computational complexity: SA can be computationally expensive, especially for large problem instances, while GA can be more efficient in terms of computational resources.
 
+=== GA Terminology
+
+1. Gene: A gene is the basic unit of genetic information in a chromosome. It represents a single characteristic or feature of an individual. In Genetic Algorithms, genes are typically represented as binary strings (0s and 1s) or real-valued numbers.
+
+2. Genome: A genome is the complete set of genes in an individual's chromosome. It represents the entire genetic makeup of an individual.
+
+3. Chromosome: A chromosome is a single solution or individual in a population. It consists of a set of genes that represent a potential solution to the optimization problem.
+
+4. Population: A population is a set of chromosomes or individuals that are used to evolve better solutions through the Genetic Algorithm process. The population size is a critical parameter in Genetic Algorithms.
+
+5. Fitness Function: A fitness function is a mathematical function that evaluates the quality or fitness of a chromosome or individual. It determines how well a solution satisfies the optimization problem's objectives.
+
+6. Selection: Selection is the process of choosing chromosomes or individuals from the population to reproduce and form the next generation. Common selection methods include Roulette Wheel Selection, Tournament Selection, and Steady State Selection (which you're using).
+
+7. Crossover (Recombination): Crossover is the process of combining the genetic information of two parent chromosomes to create a new offspring chromosome. You're using single point crossover, but there are other types, such as multi-point crossover, uniform crossover, and edge recombination crossover.
+
+8. Mutation: Mutation is the process of randomly changing the genetic information of a chromosome to introduce new genetic variations. This helps maintain diversity in the population and prevents convergence to a single solution.
+
+9. Generation: A generation is a single iteration of the Genetic Algorithm process, where the population is evolved through selection, crossover, and mutation.
+
+10. Termination Condition: A termination condition is a criterion that determines when to stop the Genetic Algorithm process. Common termination conditions include a maximum number of generations, a satisfactory fitness level, or a convergence threshold.
+
+=== GA specs
+
+Single Point Crossover:
+
+- Single point crossover is a simple and efficient method that can be effective for problems with a small number of local optima, like the Ring Star problem.
+- In the Ring Star problem, the solution space is relatively simple, and single point crossover can help explore the search space efficiently.
+- Single point crossover can also help maintain diversity in the population, which is important for avoiding convergence to a single solution.
+
+Steady-State Selection:
+
+- Steady State selection is a suitable choice for the Ring Star problem because it allows for a more gradual replacement of the population, which can help maintain diversity and avoid convergence to a single solution.
+- Steady State selection can also help reduce the computational cost of the algorithm by only replacing a subset of the population in each generation.
+- In the Ring Star problem, Steady State selection can help balance exploration and exploitation, which is important for finding the global optimum.
+
+Random Mutation:
+
+- In the Ring Star problem, random mutation can help escape local optima and explore the search space more thoroughly.
+- Random mutation can also help adapt to changing fitness landscapes, which is important in dynamic optimization problems.
+
+
 === The heuristics to be compared
 1. Genetic Algorithm
 2. Simulated Annealing
